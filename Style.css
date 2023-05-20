@@ -1,0 +1,70 @@
+body {
+    background: black;
+    margin: 0;
+}
+#front-page {
+    background: black;
+    width: 100%;
+    height: fit-content;
+    display: inline-block;
+}
+#front-page-topbar {
+    background: black;
+    width: 100%;
+    height: 0;
+    position: fixed;
+    z-index: 1;
+    transition: 0.75s;
+    display: flex;
+    justify-content: flex-end;
+}
+#front-page-topbar-section2 {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+#front-page-topbar-logo {
+    height: 100%;
+    width: auto;
+}
+#front-page-topbar-section3 {
+    background: red;
+    width: 25%;
+    height: 100%;
+    display: table;
+    table-layout: fixed;
+}
+.front-page-topbar-options {
+    background: rgba(255, 255, 255, 0);
+    height: 100%;
+    border: none;
+    color: white;
+    font-size: 175%;
+    transition: 0.75s;
+    display: table-cell;
+}
+.front-page-topbar-options:hover {
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+.frontPage {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    transition: 0.75s;
+}
+.frontPage.section1 {
+    background: linear-gradient(to bottom, black, midnightblue);
+}
+.frontPage.section2 {
+    background: linear-gradient(to bottom, midnightblue, lightblue);
+}
+.frontPage.section3 {
+    background: linear-gradient(to bottom, lightblue, white);
+}
+#front-page-bottom {
+    background: white;
+    width: 100%;
+    height: 0;
+}
